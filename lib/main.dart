@@ -90,7 +90,6 @@ class _MyHomePageState extends State<MyHomePage> {
                           padding: EdgeInsets.all(10),
                           child: ElevatedButton(
                             onPressed: (){
-                              print("meow");
                               Navigator.push(context, MaterialPageRoute(builder: (context)=>DashboardScreen()));
                             },
                             style: buttonStyle,
