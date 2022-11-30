@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Hoo Home Page'),
     );
   }
 }
@@ -70,12 +70,12 @@ class _MyHomePageState extends State<MyHomePage> {
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
     return Scaffold(
-      appBar: AppBar(
-        // Here we take the value from the MyHomePage object that was created by
-        // the App.build method, and use it to set our appbar title.
-        title: Text(widget.title),
-      ),
-      body: Center(
+      // appBar: AppBar(
+      //   // Here we take the value from the MyHomePage object that was created by
+      //   // the App.build method, and use it to set our appbar title.
+      //   title: Text(widget.title),
+      // ),
+      body: SingleChildScrollView(
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
         child: Column(
@@ -94,14 +94,25 @@ class _MyHomePageState extends State<MyHomePage> {
           // axis because Columns are vertical (the cross axis would be
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
-            ),
+          children: [
+            Image.asset('assets/homepage.png'),
+            ElevatedButton(
+              onPressed: () {},
+              child: Positioned(
+                left: -100,
+                  top: 100,
+                child: Container(
+                      height: 150,
+                      width: 50,
+                      decoration: BoxDecoration(
+                          // borderRadius: BorderRadius.circular(1),
+                          // color: Colors.black
+                          ),
+                      child: Icon(Icons.add)),
+
+              ),
+            )
+            // ButtonBar(children: [Icon(Icons.add), Icon(Icons.add)],)
           ],
         ),
       ),
