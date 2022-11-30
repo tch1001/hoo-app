@@ -65,36 +65,105 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Stack(
         children: [
-          Image.asset('assets/homepage.png'),
+          // Image.asset('assets/homepage.png'),
           Positioned(
-              child: Center(
-                child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      ElevatedButton(
-                        onPressed: (){
-                          print("meow");
-                        },
-                        style: ElevatedButton.styleFrom(
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(20)
-                          )
+              child: Scaffold(
+                backgroundColor: Color.fromARGB(255, 18, 43, 134),
+                appBar: AppBar(
+                    backgroundColor: Colors.white,
+                    leading: Icon(Icons.mail, color: Colors.blue),
+                    title: Center(child: Text("HOO", style: TextStyle(color: Colors.blue),)),
+                    actions: [
+                      Icon(Icons.emoji_events, color: Colors.blue),
+                      Icon(Icons.more_horiz, color: Colors.blue)
+                    ],
+                ),
+                body: Center(
+                  child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Image.asset('assets/hoo_device.png'),
+                        Container(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Text(
+                            "Hello! Welcome to HOO",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 30,
+                            ),
+                          ),
                         ),
-                        child: Container(
-                          height: 50,
-                          width: 150,
-                          // child: Icon(Icons.add),
+                        Container(
+                          padding: EdgeInsets.all(10),
+                          child: ElevatedButton(
+                            onPressed: (){
+                              print("meow");
+                            },
+                            style: ElevatedButton.styleFrom(
+                                backgroundColor: Colors.white,
+                                shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(20)
+                                )
+                            ),
+                            child: Container(
+                              alignment: Alignment.center,
+                              child: Text("Login",
+                                                          style: TextStyle(
+                              color: Colors.blue,
+                              fontSize: 20,
+                            )),
+                              height: 50,
+                              width: 300,
+                              // child: Icon(Icons.add),
+                            ),
+                          ),
                         ),
+                        Container(
+                          padding: EdgeInsets.all(10),
+                          child: ElevatedButton(
+                            onPressed: (){
+                              print("meow");
+                            },
+                            style: ElevatedButton.styleFrom(
+                                backgroundColor: Colors.white,
+                                shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(20)
+                                )
+                            ),
+                            child: Container(
+                              alignment: Alignment.center,
+                              child: Text("Register",
+                                                          style: TextStyle(
+                              color: Colors.blue,
+                              fontSize: 20,
+                            )),
+                              height: 50,
+                              width: 300,
+                            ),
+                          ),
+                        )
+                      ]
+                  ),
+                ),
+                bottomNavigationBar: BottomNavigationBar(
+                    unselectedItemColor: Colors.grey,
+                    selectedItemColor: Colors.blue,
+                    items: const [
+                      BottomNavigationBarItem(
+                          label: "Home",
+                          icon: Icon(Icons.home)
                       ),
-                      ElevatedButton(
-                        onPressed: (){
-                          print("meow");
-                        },
-                        child: Container(
-                          height: 50,
-                          width: 150,
-                          child: Icon(Icons.add),
-                        ),
+                      BottomNavigationBarItem(
+                          label: "Map",
+                          icon: Icon(Icons.share_location_outlined)
+                      ),
+                      BottomNavigationBarItem(
+                          label: "Shop",
+                          icon: Icon(Icons.shop)
+                      ),
+                      BottomNavigationBarItem(
+                          label: "Profile",
+                          icon: Icon(Icons.person)
                       )
                     ]
                 ),
