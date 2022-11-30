@@ -64,23 +64,43 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Stack(
-      children: [
-        Image.asset('assets/homepage.png'),
-        Positioned(
-          left: 40,
-          top: 20,
-          child: ElevatedButton(
-            onPressed: (){
-              print("meow");
-            },
-            child: Container(
-              height: 50,
-              width: 150,
-              child: Icon(Icons.add),
-            ),
+        children: [
+          Image.asset('assets/homepage.png'),
+          Positioned(
+              child: Center(
+                child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      ElevatedButton(
+                        onPressed: (){
+                          print("meow");
+                        },
+                        style: ElevatedButton.styleFrom(
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20)
+                          )
+                        ),
+                        child: Container(
+                          height: 50,
+                          width: 150,
+                          // child: Icon(Icons.add),
+                        ),
+                      ),
+                      ElevatedButton(
+                        onPressed: (){
+                          print("meow");
+                        },
+                        child: Container(
+                          height: 50,
+                          width: 150,
+                          child: Icon(Icons.add),
+                        ),
+                      )
+                    ]
+                ),
+              )
           )
-        )
-      ]
+        ]
     );
     return Scaffold(
       body: SingleChildScrollView(
@@ -92,11 +112,11 @@ class _MyHomePageState extends State<MyHomePage> {
               onPressed: () {},
               child: Positioned(
                 left: -100,
-                  top: 100,
+                top: 100,
                 child: Container(
-                      height: 150,
-                      width: 50,
-                      child: Icon(Icons.add)),
+                    height: 150,
+                    width: 50,
+                    child: Icon(Icons.add)),
 
               ),
             )
