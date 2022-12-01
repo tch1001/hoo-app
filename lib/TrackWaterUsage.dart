@@ -31,7 +31,7 @@ class _TrackWaterUsageState extends State<TrackWaterUsage>{
                 ),
               ),
               Container(
-                padding: EdgeInsets.all(10.0),
+                padding: EdgeInsets.all(20.0),
                 child: ElevatedButton(
                   onPressed: () { print("hi"); },
                   style: buttonStyle,
@@ -67,7 +67,7 @@ class _TrackWaterUsageState extends State<TrackWaterUsage>{
                 ),
               ),
               Container(
-                padding: EdgeInsets.all(10.0),
+                padding: EdgeInsets.all(20.0),
                 child: ElevatedButton(
                   onPressed: () { print("hi"); },
                   style: buttonStyle,

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 Color mydarkblue = Color.fromARGB(255, 18, 43, 134);
+Color mylightblue = Color.fromARGB(255, 130, 144, 193);
 Color buttonColor = Colors.white;
 
 TextStyle myTextStyle(textColor){
