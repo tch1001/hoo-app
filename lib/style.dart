@@ -3,15 +3,21 @@ import 'package:flutter/material.dart';
 Color mydarkblue = Color.fromARGB(255, 18, 43, 134);
 Color buttonColor = Colors.white;
 
+TextStyle myTextStyle(textColor){
+  return TextStyle(
+              fontSize: 30,
+              color: textColor
+            );
+}
 TextStyle buttonTextStyle = TextStyle(
   color: mydarkblue,
   fontSize: 20,
 );
 FloatingActionButton backButton(context){
   return FloatingActionButton.extended(
-      onPressed: () {
-        Navigator.pop(context);
-      },
+    onPressed: () {
+      Navigator.pop(context);
+    },
     icon: Icon(Icons.arrow_back, color: mydarkblue,),
     label: Text("Back", style: buttonTextStyle,),
     backgroundColor: Colors.white,
@@ -39,6 +45,23 @@ Container createRichButton(String asset_path, String text, void Function() onPre
             Padding(child: Text(text, style: buttonTextStyle), padding: EdgeInsets.all(10.0))
           ],
         ),
+      )
+  );
+}
+Container createRichText(String text, void Function() onPressed){
+  return Container(
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.all(Radius.circular(20)),
+        color: Colors.white,
+      ),
+      padding: EdgeInsets.all(20.0),
+      margin: EdgeInsets.all(10.0),
+      child: Padding(
+          child: Text(text,
+              style: myTextStyle(mydarkblue),
+              textAlign: TextAlign.center,
+          ),
+          padding: EdgeInsets.all(10.0)
       )
   );
 }

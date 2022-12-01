@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:twig_app/appbar.dart';
+import 'package:twig_app/challenge.dart';
 import 'package:twig_app/style.dart';
 
 class QuestScreen extends StatefulWidget{
@@ -31,7 +32,7 @@ class _QuestScreenState extends State<QuestScreen>{
               child: Image.asset('assets/man.png', height: 200,)
           ),
           createQuest("1", 350, 500, (){
-            print("challenge 1");
+            Navigator.push(context, MaterialPageRoute(builder: (context)=>ChallengeScreen()));
           }),
           createQuest("2", 130, 450, (){ print("challenge 2"); }),
           createQuest("3", 150, 250, (){ print("challenge 3"); }),
