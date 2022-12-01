@@ -2,19 +2,21 @@ import 'package:flutter/material.dart';
 
 Color mydarkblue = Color.fromARGB(255, 18, 43, 134);
 Color buttonColor = Colors.white;
+
+TextStyle buttonTextStyle = TextStyle(
+  color: mydarkblue,
+  fontSize: 20,
+);
 FloatingActionButton backButton(context){
   return FloatingActionButton.extended(
       onPressed: () {
         Navigator.pop(context);
       },
-    icon: Icon(Icons.arrow_back),
-    label: Text("Back"),
+    icon: Icon(Icons.arrow_back, color: mydarkblue,),
+    label: Text("Back", style: buttonTextStyle,),
+    backgroundColor: Colors.white,
   );
 }
-TextStyle buttonTextStyle = TextStyle(
-  color: mydarkblue,
-  fontSize: 20,
-);
 TextStyle buttonTextStyleInverted = TextStyle(
   color: Colors.white,
   fontSize: 20,
