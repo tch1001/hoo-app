@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:twig_app/QuestScreen.dart';
 import 'package:twig_app/WaterUsageScreen.dart';
 import 'package:twig_app/appbar.dart';
 import 'package:twig_app/style.dart';
@@ -27,7 +28,9 @@ class _DashboardScreenState extends State<DashboardScreen>{
             createRichButton("assets/graph.png", "track your water usage", () {
               Navigator.push(context, MaterialPageRoute(builder: (context)=>(TrackWaterUsage())));
             }),
-            createRichButton("assets/quest.png", "complete today's quest", () { print("quest"); })
+            createRichButton("assets/quest.png", "complete today's quest", () {
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>(QuestScreen())));
+            })
           ],
         )
     );
