@@ -6,6 +6,10 @@ TextStyle buttonTextStyle = TextStyle(
   color: mydarkblue,
   fontSize: 20,
 );
+TextStyle buttonTextStyleInverted = TextStyle(
+  color: Colors.white,
+  fontSize: 20,
+);
 ButtonStyle buttonStyle = ElevatedButton.styleFrom(
     backgroundColor: buttonColor,
     shape: RoundedRectangleBorder(
@@ -25,5 +29,44 @@ Container createRichButton(String asset_path, String text, void Function() onPre
           ],
         ),
       )
+  );
+}
+Widget createLocationBasedUsage(String asset_path, String title, String description){
+  return ElevatedButton(
+    onPressed: (){},
+    style: ElevatedButton.styleFrom(
+        backgroundColor: mydarkblue,
+        shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(20)
+        )
+    ),
+    child: Container(
+    color: mydarkblue,
+    child: Row(
+      mainAxisAlignment: MainAxisAlignment.start,
+      children: [
+        Padding(child: Image.asset(asset_path, height: 100,), padding: EdgeInsets.all(10.0),),
+        Align(
+          alignment: Alignment.centerLeft,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Align(
+                  alignment: Alignment.centerLeft,
+                  child: Padding(
+                      child: Text(title, style: buttonTextStyleInverted),
+                      padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 5.0)
+                  )
+              ),
+              Padding(
+                  child: Text(description, style: buttonTextStyleInverted),
+                  padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 5.0)
+              ),
+            ],
+          ),
+        ),
+      ],
+    ),
+  ),
   );
 }

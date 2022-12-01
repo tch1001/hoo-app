@@ -3,6 +3,8 @@ import 'package:twig_app/WaterUsageScreen.dart';
 import 'package:twig_app/appbar.dart';
 import 'package:twig_app/style.dart';
 
+import 'TrackWaterUsage.dart';
+
 class DashboardScreen extends StatefulWidget{
   @override
   _DashboardScreenState createState() => _DashboardScreenState();
@@ -22,7 +24,9 @@ class _DashboardScreenState extends State<DashboardScreen>{
             createRichButton("assets/watericon.png", "today: XXX litres", () {
               Navigator.push(context, MaterialPageRoute(builder: (context)=>(WaterUsageScreen())));
             }),
-            createRichButton("assets/graph.png", "track your water usage", () { print("graph"); }),
+            createRichButton("assets/graph.png", "track your water usage", () {
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>(TrackWaterUsage())));
+            }),
             createRichButton("assets/quest.png", "complete today's quest", () { print("quest"); })
           ],
         )
