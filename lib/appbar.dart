@@ -7,11 +7,6 @@ AppBar myappbar(BuildContext context) {
       title: Center(child: Text("HOO", style: TextStyle(color: Colors.blue),)),
       actions: [
         Icon(Icons.emoji_events, color: Colors.blue),
-        RawMaterialButton(child: Icon(Icons.arrow_back, color: Colors.blue),
-          onPressed: (){
-            Navigator.pop(context);
-          },
-        ),
       ]
   );
 }
