@@ -14,6 +14,7 @@ class _TrackWaterUsageState extends State<TrackWaterUsage>{
         appBar: myappbar(context),
         bottomNavigationBar: mybottomnavbar(context),
         backgroundColor: Theme.of(context).backgroundColor,
+        floatingActionButton: backButton(context),
         body: SingleChildScrollView(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,

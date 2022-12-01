@@ -37,6 +37,10 @@ class _QuestScreenState extends State<QuestScreen>{
           createQuest("3", 150, 250, (){ print("challenge 3"); }),
           createQuest("4", 380, 100, (){ print("challenge 4"); }),
           createQuest("5", 100, 10, (){ print("challenge 5"); }),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: backButton(context),
+          ),
         ]
     );
   }

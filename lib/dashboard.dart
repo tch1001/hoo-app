@@ -18,6 +18,7 @@ class _DashboardScreenState extends State<DashboardScreen>{
         appBar: myappbar(context),
         bottomNavigationBar: mybottomnavbar(context),
         backgroundColor: Theme.of(context).backgroundColor,
+        floatingActionButton: backButton(context),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [

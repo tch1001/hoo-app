@@ -2,6 +2,15 @@ import 'package:flutter/material.dart';
 
 Color mydarkblue = Color.fromARGB(255, 18, 43, 134);
 Color buttonColor = Colors.white;
+FloatingActionButton backButton(context){
+  return FloatingActionButton.extended(
+      onPressed: () {
+        Navigator.pop(context);
+      },
+    icon: Icon(Icons.arrow_back),
+    label: Text("Back"),
+  );
+}
 TextStyle buttonTextStyle = TextStyle(
   color: mydarkblue,
   fontSize: 20,
@@ -41,32 +50,32 @@ Widget createLocationBasedUsage(String asset_path, String title, String descript
         )
     ),
     child: Container(
-    color: mydarkblue,
-    child: Row(
-      mainAxisAlignment: MainAxisAlignment.start,
-      children: [
-        Padding(child: Image.asset(asset_path, height: 100,), padding: EdgeInsets.all(10.0),),
-        Align(
-          alignment: Alignment.centerLeft,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Align(
-                  alignment: Alignment.centerLeft,
-                  child: Padding(
-                      child: Text(title, style: buttonTextStyleInverted),
-                      padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 5.0)
-                  )
-              ),
-              Padding(
-                  child: Text(description, style: buttonTextStyleInverted),
-                  padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 5.0)
-              ),
-            ],
+      color: mydarkblue,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: [
+          Padding(child: Image.asset(asset_path, height: 100,), padding: EdgeInsets.all(10.0),),
+          Align(
+            alignment: Alignment.centerLeft,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Align(
+                    alignment: Alignment.centerLeft,
+                    child: Padding(
+                        child: Text(title, style: buttonTextStyleInverted),
+                        padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 5.0)
+                    )
+                ),
+                Padding(
+                    child: Text(description, style: buttonTextStyleInverted),
+                    padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 5.0)
+                ),
+              ],
+            ),
           ),
-        ),
-      ],
+        ],
+      ),
     ),
-  ),
   );
 }
