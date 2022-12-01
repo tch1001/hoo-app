@@ -16,7 +16,7 @@ AppBar myappbar(BuildContext context, {bool invertedColors=false}) {
       ),
       title: Center(child: Text("HOO", style: TextStyle(color: (!invertedColors?mydarkblue:Colors.white)),)),
       actions: [
-        Icon(Icons.emoji_events, color: Colors.blue),
+        Icon(Icons.emoji_events, color: (!invertedColors ? mydarkblue : Colors.white )),
       ]
   );
 }
