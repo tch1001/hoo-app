@@ -19,8 +19,8 @@ class _WaterUsageScreenState extends State<WaterUsageScreen>{
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset('assets/watersmile.png', height: 150),
-            createRichButton("assets/watericon.png", "XXX litres", () { }),
-            createRichButton("assets/clock.png", "XXX mins", () { print("clock"); }),
+            createRichButton("assets/watericon.png", "15 litres", () { }),
+            createRichButton("assets/clock.png", "20 mins", () { print("clock"); }),
             Container(
               padding: EdgeInsets.all(10.0),
               child: ElevatedButton(
@@ -56,7 +56,10 @@ class _WaterUsageScreenState extends State<WaterUsageScreen>{
                                     )
                                 ),
                                 Padding(
-                                    child: Text("XX litres of water used", style: buttonTextStyle),
+                                    child: Text("10 litres of water used", style: TextStyle(
+                                      color: mydarkblue,
+                                      fontSize: 18,
+                                    )),
                                     padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 5.0)
                                 ),
                               ],

@@ -33,7 +33,7 @@ class _RewardScreenState extends State<RewardScreen>{
             child: Column(
               children: [
                 SizedBox(height: 10),
-                Text("XXX Reward has been added to your bank!",
+                Text("10 Reward has been added to your bank!",
                   style: TextStyle(
                       color: Colors.white,
                       fontSize: 20.0

@@ -42,7 +42,7 @@ Container createRichButton(String asset_path, String text, void Function() onPre
         style: buttonStyle,
         child: Row(
           children: [
-            Padding(child: Image.asset(asset_path, height: 100,), padding: EdgeInsets.all(10.0),),
+            Padding(child: Image.asset(asset_path, height: 80,), padding: EdgeInsets.all(10.0),),
             Padding(child: Text(text, style: buttonTextStyle), padding: EdgeInsets.all(10.0))
           ],
         ),

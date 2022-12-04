@@ -85,36 +85,36 @@ class _MailScreenState extends State<MailScreen>{
                     ),
                   ),
                 ),
-                createNotification("Congratulations!", "You have kept to your water usage target for XX days in a row!"),
-                createClickableNotification("Click here to collect your reward!", "For completing challenge number X", (){
+                createNotification("Congratulations!", "You have kept to your water usage target for 3 days in a row!"),
+                createClickableNotification("Click here to collect your reward!", "For completing challenge number 1", (){
                   openReward();
                 }),
-                createNotification("Congratulations!", "You have kept to your water usage target for XX days in a row!"),
-                createClickableNotification("Click here to collect your reward!", "For completing challenge number X", (){
+                createNotification("Congratulations!", "You have kept to your water usage target for 3 days in a row!"),
+                createClickableNotification("Click here to collect your reward!", "For completing challenge number 1", (){
                   openReward();
                 }),
-                createNotification("Congratulations!", "You have kept to your water usage target for XX days in a row!"),
-                createClickableNotification("Click here to collect your reward!", "For completing challenge number X", (){
+                createNotification("Congratulations!", "You have kept to your water usage target for 3 days in a row!"),
+                createClickableNotification("Click here to collect your reward!", "For completing challenge number 1", (){
                   openReward();
                 }),
-                createNotification("Congratulations!", "You have kept to your water usage target for XX days in a row!"),
-                createClickableNotification("Click here to collect your reward!", "For completing challenge number X", (){
+                createNotification("Congratulations!", "You have kept to your water usage target for 3 days in a row!"),
+                createClickableNotification("Click here to collect your reward!", "For completing challenge number 1", (){
                   openReward();
                 }),
-                createNotification("Congratulations!", "You have kept to your water usage target for XX days in a row!"),
-                createClickableNotification("Click here to collect your reward!", "For completing challenge number X", (){
+                createNotification("Congratulations!", "You have kept to your water usage target for 3 days in a row!"),
+                createClickableNotification("Click here to collect your reward!", "For completing challenge number 1", (){
                   openReward();
                 }),
-                createNotification("Congratulations!", "You have kept to your water usage target for XX days in a row!"),
-                createClickableNotification("Click here to collect your reward!", "For completing challenge number X", (){
+                createNotification("Congratulations!", "You have kept to your water usage target for 3 days in a row!"),
+                createClickableNotification("Click here to collect your reward!", "For completing challenge number 1", (){
                   openReward();
                 }),
-                createNotification("Congratulations!", "You have kept to your water usage target for XX days in a row!"),
-                createClickableNotification("Click here to collect your reward!", "For completing challenge number X", (){
+                createNotification("Congratulations!", "You have kept to your water usage target for 3 days in a row!"),
+                createClickableNotification("Click here to collect your reward!", "For completing challenge number 1", (){
                   openReward();
                 }),
-                createNotification("Congratulations!", "You have kept to your water usage target for XX days in a row!"),
-                createClickableNotification("Click here to collect your reward!", "For completing challenge number X", (){
+                createNotification("Congratulations!", "You have kept to your water usage target for 3 days in a row!"),
+                createClickableNotification("Click here to collect your reward!", "For completing challenge number 1", (){
                   openReward();
                 }),
                 SizedBox(height: 300)

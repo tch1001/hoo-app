@@ -39,9 +39,9 @@ class _ChallengeScreenState extends State<ChallengeScreen>{
                   textAlign: TextAlign.center,
                 ),
               ),
-              createRichText("XXX users have completed this challenge!", () { }),
-              createRichText("Did you know that doing so can save you XXX litres of water?", () { }),
-              createRichText("Fun Fact: Doing this for 1 year will save XX olympics-sized pools of water!", () { }),
+              createRichText("92 users have completed this challenge!", () { }),
+              createRichText("Did you know that doing so can save you 15 litres of water?", () { }),
+              createRichText("Fun Fact: Doing this for 1 year will save 60 olympics-sized pools of water!", () { }),
               Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.center,

@@ -23,7 +23,7 @@ class _DashboardScreenState extends State<DashboardScreen>{
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset('assets/watersmile.png', height: 150),
-            createRichButton("assets/watericon.png", "today: XXX litres", () {
+            createRichButton("assets/watericon.png", "today: 15 litres", () {
               Navigator.push(context, MaterialPageRoute(builder: (context)=>(WaterUsageScreen())));
             }),
             createRichButton("assets/graph.png", "track your water usage", () {

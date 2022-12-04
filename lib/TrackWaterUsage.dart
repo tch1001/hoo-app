@@ -54,7 +54,7 @@ class _TrackWaterUsageState extends State<TrackWaterUsage>{
                                       )
                                   ),
                                   Padding(
-                                      child: Text("XXX litres", style: buttonTextStyle),
+                                      child: Text("210 litres", style: buttonTextStyle),
                                       padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 5.0)
                                   ),
                                 ],
@@ -86,9 +86,9 @@ class _TrackWaterUsageState extends State<TrackWaterUsage>{
                         ),
                         Column(
                           children: [
-                            createLocationBasedUsage("assets/kitchen.png", 'TAP 1: Kitchen', 'XX litres used'),
+                            createLocationBasedUsage("assets/kitchen.png", 'TAP 1: Kitchen', '100 litres used'),
                             SizedBox(height: 10),
-                            createLocationBasedUsage("assets/bedroom.png", 'TAP 2: Master Bedroom', 'XX litres used'),
+                            createLocationBasedUsage("assets/bedroom.png", 'TAP 2: Master\nBedroom', '110 litres used'),
                             SizedBox(height: 10)
                           ],
                         )
